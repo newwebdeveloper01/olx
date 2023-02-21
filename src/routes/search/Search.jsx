@@ -5,7 +5,7 @@ import { Container } from '../../utils/Container.jsx';
 import { Link } from 'react-router-dom';
 import "./Search.scss";
 import SearchCom from "../../components/search/Search.jsx"
-import {v4 as uuidv4} from 'uuid';
+// import {v4 as uuidv4} from 'uuid';
 const Search = () => {
     const {productTitle}=useParams();
     const [data , isLoading]=useFetchData(`/products/?title=${productTitle}`)
