@@ -8,7 +8,7 @@ const Product = ({product}) => {
    
         <article className='product'>
                         <div className="product__top">
-                            <NavLink className="transarent__link" to="/product">
+                            <NavLink className="transarent__link" to={`/product/${product.id}`}>
                                 { product.images.length>0 && product.images[0].startsWith("https://") ?
                                 <img className='product__top__images' src={product.images} alt="rasms" />
                                 :

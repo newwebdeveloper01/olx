@@ -28,7 +28,14 @@ const ALLButton = ({classButton , title , link}) => {
     </>
   )
 }
+const Button = ({type, title, icon}) => {
+  return (
+    <button className='main-button' type={type}>
+        {icon}
+        {title}
+    </button>
+  )
+}
 
 
-
-export { Container , Messages , ALLButton}
+export { Container , Messages , ALLButton , Button}

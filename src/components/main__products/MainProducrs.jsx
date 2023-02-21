@@ -6,7 +6,6 @@ import './MainProduct.scss';
 import Product from '../product/Product';
 const MainProducrs = () => {
     const [data , isLoding]=useFetchData("/products?offset=10&limit=20");
-    console.log(data);
   return (
     <section className='main__products'>
         <Container>
