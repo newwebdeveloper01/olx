@@ -1,0 +1,30 @@
+.category__item{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    &__wrapper{
+       & > img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+    }
+}
+
+.category__list{
+    background-color:#fff;
+    margin-top: 60px;
+    &__title{
+        text-align: center;
+        margin-bottom: 60px;
+        font-size: 30px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
